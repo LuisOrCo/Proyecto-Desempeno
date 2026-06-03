@@ -568,7 +568,6 @@ function monitorearLanzamientos() {
     // Solo repintamos las tarjetas si hubo cambios en los estados
     if (huboCambios) {
         renderizarTarjetas();
-        actualizarEstadisticas();
     }
 }
 
@@ -647,6 +646,8 @@ document.addEventListener("DOMContentLoaded", () => {
         actualizarReloj();
 
         monitorearLanzamientos();
+
+        actualizarEstadisticas();
 
     }, 1000);
 
